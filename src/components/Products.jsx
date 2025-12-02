@@ -7,7 +7,7 @@ const Products = () => {
 
     const handleWhatsApp = (plan) => {
         const message = `Olá! Tenho interesse no plano ${plan}. Gostaria de mais informações.`;
-        window.open(`https://wa.me/5585999999999?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/558586948201?text=${encodeURIComponent(message)}`, '_blank');
     };
 
     const products = [

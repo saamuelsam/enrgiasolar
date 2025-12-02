@@ -1,8 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Location = () => {
-    // Endereço da empresa - ATUALIZE COM O ENDEREÇO REAL
-    const address = "Fortaleza, CE, Brasil";
     const googleMapsUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2345678901234!2d-38.5267!3d-3.7319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNDMnNTQuOCJTIDM4wrAzMSczNi4xIlc!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr";
 
     const locations = [
@@ -13,7 +11,6 @@ const Location = () => {
             email: "fortalengenhariasolar@sesfortal.com.br",
             hours: "Seg - Sex: 8h às 18h"
         }
-        // Adicione mais localizações conforme necessário
     ];
 
     return (
@@ -29,8 +26,25 @@ const Location = () => {
                     </p>
                 </div>
 
+                {/* Building Photo - Full Width */}
+                <div className="mb-8">
+                    <div className="relative h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl group">
+                        <img
+                            src="/bs-design-building.jpg"
+                            alt="BS Design Corporate Towers - Fortaleza"
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 className="text-2xl md:text-3xl font-bold mb-2">BS Design Corporate Towers</h3>
+                            <p className="text-gray-200 text-sm md:text-base">Nossa sede em Fortaleza - CE</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Map and Contact Info */}
                 <div className="grid lg:grid-cols-2 gap-8">
-                    {/* Map */}
+                    {/* Google Maps */}
                     <div className="relative h-96 lg:h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                         <iframe
                             src={googleMapsUrl}
