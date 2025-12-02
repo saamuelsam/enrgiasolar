@@ -4,6 +4,7 @@ import PromotionalBanner from '../components/PromotionalBanner'
 import Hero from '../components/Hero'
 import PromoBanner from '../components/PromoBanner'
 import Features from '../components/Features'
+import SolarCalculator from '../components/SolarCalculator'
 import Stats from '../components/Stats'
 import Products from '../components/Products'
 import About from '../components/About'
@@ -22,6 +23,7 @@ const Home = () => {
             <Hero />
             <PromoBanner />
             <Features />
+            <SolarCalculator />
             <Stats />
             <Products />
             <About />

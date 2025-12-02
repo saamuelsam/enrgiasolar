@@ -26,7 +26,7 @@ const TrabalheConosco = () => {
         {
             name: "FORTAL Sênior",
             color: "from-purple-600 to-purple-800",
-            commission: "10% + 5% (Seguro) + 1,5% (1ª linha)",
+            commission: "10% + 5% (Seguro) + 1,5% (1ª linha) + (0,5% sobre as outras linhas)",
             meta: "Atingir 400.000 Pontos",
             equipe: "Mínimo 8 pessoas na 1ª linha, 2 na 2ª linha, máximo 4 linhas",
             bonus: "R$ 1.500,00 + Jantar no Grand Parrilla",
@@ -224,10 +224,20 @@ const TrabalheConosco = () => {
                         })}
                     </div>
 
-                    <div className="bg-brand-orange rounded-2xl md:rounded-3xl p-6 md:p-8 text-center mb-6 md:mb-8">
-                        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-4">🏆 Premiação Anual 2026</h3>
-                        <p className="text-base sm:text-lg md:text-2xl mb-2">Os 10 melhores do ano ganharão:</p>
-                        <p className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 md:mt-4">Cruzeiro Nacional - 10 Vagas!</p>
+                    <div className="bg-brand-orange rounded-2xl md:rounded-3xl p-6 md:p-8 text-center mb-6 md:mb-8 overflow-hidden">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6">🏆 Premiação Anual 2026</h3>
+                        <p className="text-base sm:text-lg md:text-2xl mb-4">Os 10 melhores do ano ganharão:</p>
+
+                        {/* Banner do Cruzeiro */}
+                        <div className="mb-4 md:mb-6 rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">
+                            <img
+                                src="/cruise-banner.png"
+                                alt="Cruzeiro Nacional - Premiação 2026"
+                                className="w-full h-auto object-cover"
+                            />
+                        </div>
+
+                        <p className="text-2xl sm:text-3xl md:text-4xl font-bold">Cruzeiro Nacional - 10 Vagas!</p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-6">
