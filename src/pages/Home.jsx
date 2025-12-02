@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import Stats from '../components/Stats'
 import Products from '../components/Products'
 import About from '../components/About'
+import CreatoriPartnership from '../components/CreatoriPartnership'
 import Location from '../components/Location'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
@@ -24,6 +25,7 @@ const Home = () => {
             <Stats />
             <Products />
             <About />
+            <CreatoriPartnership />
             <Location />
             <FAQ />
             <Footer />

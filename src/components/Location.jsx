@@ -6,7 +6,7 @@ const Location = () => {
     const locations = [
         {
             city: "Fortaleza - CE",
-            address: "BS Design Corporate Towers Fortaleza, Ceará",
+            address: "BS Design Torres Corporativas Torre Sul Av. Desembargador Moreira 1300, Aldeota Fortaleza CE",
             phone: "(85) 98694-8201",
             email: "fortalengenhariasolar@sesfortal.com.br",
             hours: "Seg - Sex: 8h às 18h"
