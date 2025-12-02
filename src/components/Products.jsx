@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import { Check, Zap } from 'lucide-react';
+import SpecialistModal from './SpecialistModal';
 
 const Products = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const handleWhatsApp = (plan) => {
         const message = `Olá! Tenho interesse no plano ${plan}. Gostaria de mais informações.`;
         window.open(`https://wa.me/5585999999999?text=${encodeURIComponent(message)}`, '_blank');
@@ -147,13 +151,16 @@ const Products = () => {
                         Precisa de um plano personalizado?
                     </p>
                     <button
-                        onClick={() => handleWhatsApp('Plano Personalizado')}
+                        onClick={() => setIsModalOpen(true)}
                         className="inline-flex items-center space-x-2 bg-brand-darkBlue hover:bg-brand-mediumBlue text-white px-8 py-3 rounded-full font-semibold transition-all duration-300"
                     >
                         <span>Fale com um Especialista</span>
                     </button>
                 </div>
             </div>
+
+            {/* Specialist Modal */}
+            <SpecialistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

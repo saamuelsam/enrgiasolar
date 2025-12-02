@@ -26,10 +26,18 @@
   }
 
   .animate-scroll {
-    animation: scroll 20s linear infinite;
+    animation: scroll 12s linear infinite;
   }
 
   .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  .animate-scroll-slow {
+    animation: scroll 25s linear infinite;
+  }
+
+  .animate-scroll-slow:hover {
     animation-play-state: paused;
   }
 }

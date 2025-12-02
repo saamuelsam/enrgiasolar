@@ -9,12 +9,14 @@ const Navbar = () => {
         { name: 'Serviços', href: '#features' },
         { name: 'Produtos', href: '#products' },
         { name: 'Sobre', href: '#about' },
+        { name: 'Localização', href: '#location' },
         { name: 'FAQ', href: '#faq' },
         { name: 'Contato', href: '#footer' },
+        { name: 'Trabalhe Conosco', href: '/trabalhe-conosco' },
     ];
 
     const handleWhatsApp = () => {
-        window.open('https://wa.me/5585999999999?text=Olá! Gostaria de saber mais sobre energia solar.', '_blank');
+        window.open('https://wa.me/+558586948201?text=Olá! Gostaria de saber mais sobre energia solar.', '_blank');
     };
 
     return (

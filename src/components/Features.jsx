@@ -5,7 +5,7 @@ const Features = () => {
         {
             icon: DollarSign,
             title: 'Economia Garantida',
-            description: 'Reduza sua conta de energia em até 95% e tenha retorno do investimento em poucos anos.',
+            description: 'Com energia solar, é possível reduzir em até 95% a conta de luz, trazendo mais previsibilidade financeira.',
             color: 'bg-green-500',
         },
         {

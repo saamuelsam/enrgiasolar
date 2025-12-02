@@ -9,10 +9,11 @@ const Footer = () => {
         { name: 'Produtos', href: '#products' },
         { name: 'Sobre Nós', href: '#about' },
         { name: 'FAQ', href: '#faq' },
+        { name: 'Trabalhe Conosco', href: '/trabalhe-conosco' },
     ];
 
     const handleWhatsApp = () => {
-        window.open('https://wa.me/5585999999999?text=Olá! Gostaria de mais informações.', '_blank');
+        window.open('https://wa.me/+55586948201?text=Olá! Gostaria de mais informações.', '_blank');
     };
 
     return (
@@ -42,7 +43,7 @@ const Footer = () => {
                                 <Facebook className="h-5 w-5" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/fortalengenhariasolar/"
                                 className="w-10 h-10 bg-brand-mediumBlue hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                             >
                                 <Instagram className="h-5 w-5" />
@@ -91,16 +92,17 @@ const Footer = () => {
                                     onClick={handleWhatsApp}
                                     className="text-gray-300 hover:text-brand-orange transition-colors duration-300 text-sm"
                                 >
-                                    (85) 99999-9999
+                                    (85) 98694-8201
                                 </button>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail className="h-5 w-5 text-brand-orange flex-shrink-0" />
                                 <a
-                                    href="mailto:contato@fortalsolar.com.br"
+                                    href="mailto:fortalengenhariasolar@sesfortal.com.br"
                                     className="text-gray-300 hover:text-brand-orange transition-colors duration-300 text-sm"
                                 >
-                                    contato@fortalsolar.com.br
+                                    fortalengenhariasolar@sesfortal.com.br
+
                                 </a>
                             </li>
                         </ul>
@@ -113,7 +115,7 @@ const Footer = () => {
                         © {currentYear} Fortal Engenharia Solar. Todos os direitos reservados.
                     </p>
                     <p className="text-gray-500 text-xs mt-2">
-                        Desenvolvido com energia solar ☀️
+                        Desenvolvido com <span className="text-brand-orange">❤️</span> por Fortal Engenharia Solar
                     </p>
                 </div>
             </div>

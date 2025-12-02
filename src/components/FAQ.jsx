@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import SpecialistModal from './SpecialistModal';
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const faqs = [
         {
@@ -97,13 +99,16 @@ const FAQ = () => {
                         Nossa equipe está pronta para ajudar você
                     </p>
                     <button
-                        onClick={() => window.open('https://wa.me/5585999999999?text=Olá! Tenho algumas dúvidas sobre energia solar.', '_blank')}
+                        onClick={() => setIsModalOpen(true)}
                         className="bg-brand-orange hover:bg-brand-darkOrange text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
                     >
                         Falar com Especialista
                     </button>
                 </div>
             </div>
+
+            {/* Specialist Modal */}
+            <SpecialistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 };

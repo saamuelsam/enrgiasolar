@@ -6,18 +6,28 @@ const PromoBanner = () => {
                 {/* First set of images */}
                 <div className="flex flex-shrink-0 space-x-8 px-4">
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/logo-blue.png"
+                        alt="Parceiro Certificado"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
+                        className="h-24 sm:h-32 md:h-40 w-auto object-contain"
+                    />
+                    <img
+                        src="/logo-blue.png"
+                        alt="Parceiro Certificado"
+                        className="h-24 sm:h-32 md:h-40 w-auto object-contain"
+                    />
+                    <img
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                 </div>
@@ -25,18 +35,28 @@ const PromoBanner = () => {
                 {/* Duplicate set for seamless loop */}
                 <div className="flex flex-shrink-0 space-x-8 px-4">
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/logo-blue.png"
+                        alt="Parceiro Certificado"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                     <img
-                        src="/banner-promo.png"
-                        alt="Black Energy - Redução de 25%"
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
+                        className="h-24 sm:h-32 md:h-40 w-auto object-contain"
+                    />
+                    <img
+                        src="/logo-blue.png"
+                        alt="Parceiro Certificado"
+                        className="h-24 sm:h-32 md:h-40 w-auto object-contain"
+                    />
+                    <img
+                        src="/ibs-logo-new.png"
+                        alt="IBS - Integradora Brasileira de Sistemas"
                         className="h-24 sm:h-32 md:h-40 w-auto object-contain"
                     />
                 </div>

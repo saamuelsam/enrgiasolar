@@ -2,7 +2,7 @@ import { Sun, Zap, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
     const handleWhatsApp = () => {
-        window.open('https://wa.me/5585999999999?text=Olá! Quero transformar luz solar em economia!', '_blank');
+        window.open('https://wa.me/+558586948201?text=Olá! Quero transformar luz solar em economia!', '_blank');
     };
 
     return (

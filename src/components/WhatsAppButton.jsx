@@ -2,7 +2,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
     const handleClick = () => {
-        window.open('https://wa.me/5585999999999?text=Olá! Vim do site e gostaria de mais informações sobre energia solar.', '_blank');
+        window.open('https://wa.me/5585986948201?text=Olá! Vim do site e gostaria de mais informações sobre energia solar.', '_blank');
     };
 
     return (
