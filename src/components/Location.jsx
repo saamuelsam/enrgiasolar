@@ -130,28 +130,81 @@ const Location = () => {
                             </div>
                         ))}
 
-                        {/* Additional Info */}
+                        {/* Regional Presence with Images */}
                         <div className="bg-brand-light rounded-2xl p-6">
                             <h4 className="text-xl font-bold text-brand-darkBlue mb-3">
                                 Atendemos em Todo o Brasil
                             </h4>
-                            <p className="text-gray-600 mb-4">
+                            <p className="text-gray-600 mb-6">
                                 Com bases em Ceará, Rio Grande do Sul, Goiás e Distrito Federal,
                                 estamos prontos para atender você onde estiver.
                             </p>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="bg-brand-darkBlue text-white px-4 py-2 rounded-full text-sm">
-                                    Ceará
-                                </span>
-                                <span className="bg-brand-darkBlue text-white px-4 py-2 rounded-full text-sm">
-                                    Rio Grande do Sul
-                                </span>
-                                <span className="bg-brand-darkBlue text-white px-4 py-2 rounded-full text-sm">
-                                    Goiás
-                                </span>
-                                <span className="bg-brand-darkBlue text-white px-4 py-2 rounded-full text-sm">
-                                    Distrito Federal
-                                </span>
+
+                            {/* Regional Cards Grid */}
+                            <div className="grid grid-cols-2 gap-4">
+                                {/* Ceará */}
+                                <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img
+                                            src="/ceara-building.jpg"
+                                            alt="Ceará - BS Design Towers"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                                        <h5 className="text-white font-bold text-sm md:text-base">Ceará</h5>
+                                        <p className="text-gray-200 text-xs">Fortaleza</p>
+                                    </div>
+                                </div>
+
+                                {/* Rio Grande do Sul */}
+                                <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img
+                                            src="/rio-grande-sul.png"
+                                            alt="Rio Grande do Sul - Usina do Gasômetro"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                                        <h5 className="text-white font-bold text-sm md:text-base">Rio Grande do Sul</h5>
+                                        <p className="text-gray-200 text-xs">Porto Alegre</p>
+                                    </div>
+                                </div>
+
+                                {/* Goiás */}
+                                <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img
+                                            src="/goias.png"
+                                            alt="Goiás - Monumento às Três Raças"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                                        <h5 className="text-white font-bold text-sm md:text-base">Goiás</h5>
+                                        <p className="text-gray-200 text-xs">Goiânia</p>
+                                    </div>
+                                </div>
+
+                                {/* Distrito Federal */}
+                                <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div className="aspect-[4/3] overflow-hidden">
+                                        <img
+                                            src="/distrito-federal.png"
+                                            alt="Distrito Federal - Congresso Nacional"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                                        <h5 className="text-white font-bold text-sm md:text-base">Distrito Federal</h5>
+                                        <p className="text-gray-200 text-xs">Brasília</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
