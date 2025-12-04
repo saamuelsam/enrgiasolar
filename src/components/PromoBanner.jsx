@@ -21,8 +21,8 @@ const PromoBanner = () => {
                         className="h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
                     />
                     <img
-                        src="/ibs-logo-new.png"
-                        alt="IBS - Integradora Brasileira de Sistemas"
+                        src="/yellow-energy-logo.png"
+                        alt="Yellow Energy"
                         className="h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 w-auto object-contain"
                     />
                     <img

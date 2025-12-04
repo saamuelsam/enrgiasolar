@@ -7,16 +7,29 @@ const PromotionalBanner = () => {
     const banners = [
         {
             id: 1,
-            image: '/banner.png',
+            image: '/Banner01.jpg',
             alt: 'Promoção 1',
             link: '#products'
         },
         {
             id: 2,
-            image: '/banner2.png',
+            image: '/Banner02.jpg',
             alt: 'Promoção 2',
             link: '#products'
-        }
+        },
+        {
+            id: 3,
+            image: '/Banner03.jpg',
+            alt: 'Promoção 3',
+            link: '#products'
+        },
+        {
+            id: 4,
+            image: '/Banner04.jpg',
+            alt: 'Promoção 4',
+            link: '#products'
+        },
+
     ];
 
     // Auto-play: muda de slide a cada 5 segundos
@@ -62,8 +75,8 @@ const PromotionalBanner = () => {
                             key={index}
                             onClick={() => goToSlide(index)}
                             className={`h-1.5 sm:h-2 md:h-2.5 rounded-full transition-all duration-300 ${index === currentSlide
-                                    ? 'bg-brand-orange w-6 sm:w-8 md:w-10 shadow-lg shadow-brand-orange/50'
-                                    : 'bg-white/60 hover:bg-white w-1.5 sm:w-2 md:w-2.5'
+                                ? 'bg-brand-orange w-6 sm:w-8 md:w-10 shadow-lg shadow-brand-orange/50'
+                                : 'bg-white/60 hover:bg-white w-1.5 sm:w-2 md:w-2.5'
                                 }`}
                             aria-label={`Ir para banner ${index + 1}`}
                         />
