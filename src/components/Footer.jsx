@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -49,7 +49,18 @@ const Footer = () => {
                                 <Instagram className="h-5 w-5" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.youtube.com/@FortalEngenhariaSolar"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 bg-brand-mediumBlue hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                            >
+                                <Youtube className="h-5 w-5" />
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/company/fortal-engenharia-solar/about/?viewAsMember=true"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="w-10 h-10 bg-brand-mediumBlue hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                             >
                                 <Linkedin className="h-5 w-5" />
