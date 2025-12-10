@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import ReclameAquiSeal from './ReclameAquiSeal';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -66,6 +67,9 @@ const Footer = () => {
                                 <Linkedin className="h-5 w-5" />
                             </a>
                         </div>
+
+                        {/* Reclame Aqui Seal */}
+                        <ReclameAquiSeal />
                     </div>
 
                     {/* Quick Links */}
